@@ -5,26 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CV</title>
     <style>
-      .background {
-        display: block;
-        background-color: white;
-        width: 100vw;
+      body {
         height: fit-content;
+      }
+
+      .background {
+        display: grid;
+        grid-template-columns: 25vw auto;
+        background-color: white;
         color: white;
         font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
       }
 
+      .left-side,
+      .background,
+      .right-side {
+        height: fit-content;
+      }
+
       .left-side {
-        position: absolute;
         display: inline-flex;
         background-color: #080da3;
         width: 25vw;
-        height: 270%;
         color: white;
+        position: relative;
+        height: 100%;
       }
 
       .left-side img {
-        position: relative;
         display: block;
         width: 90%;
         height: 200px;
@@ -33,20 +41,16 @@
       }
 
       .left-side div {
-        position: absolute;
         display: block;
-        margin-top: 205px;
         margin-left: 5%;
         margin-right: 5%;
       }
 
       .right-side {
-        position: relative;
         display: inline-block;
         color: black;
-        width: 75vw;
-        margin-left: 27vw;
         margin-right: 2.5vw;
+        margin-left: 2.5vw;
       }
 
       hr {
@@ -63,22 +67,49 @@
 
   <body>
     <div class="background">
+      <!-- Left Side -->
       <div class="left-side">
-        <img src="/1F1A0730 (1).jpg" alt="" />
-
         <div>
+          <img src="/1F1A0730 (1).jpg" alt="" />
           <h2>CONTACT</h2>
-          <h3>Address</h3>
+          <h3>
+            <img
+              style="width: 20px; height: 20px; display: inline; margin: 0px"
+              src="/house.png"
+              alt=""
+            />
+            Address
+          </h3>
           <p>Ngara West, Kolobot Road, Nairobi, Kenya.</p>
 
-          <h3>Phone Number</h3>
+          <h3>
+            <img
+              style="width: 20px; height: 20px; display: inline; margin: 0px"
+              src="/phone.png"
+              alt=""
+            />
+            Phone Number
+          </h3>
           <p>+254793049705</p>
 
-          <h3>Email</h3>
+          <h3>
+            <img
+              style="width: 20px; height: 20px; display: inline; margin: 0px"
+              src="/open-email.png"
+              alt=""
+            />
+            Email
+          </h3>
           <p>kivungijr@gmail.com</p>
 
           <h3>Personal Portfolio</h3>
           <p>https://portfolio-aaiq.onrender. com/</p>
+          <a
+            style="text-decoration: none; color: white"
+            target="_blank"
+            href="https://portfolio-aaiq.onrender.com/"
+            >https://portfolio-aaiq.onrender.com/</a
+          >
 
           <h3>SKILLS</h3>
           <ul>
@@ -168,6 +199,7 @@
 
         <a
           style="text-decoration: none; margin-bottom: 10px"
+          target="_blank"
           href="https://new.kmstudyville.com/"
           >LInk: https://new.kmstudyville.com/</a
         >
@@ -189,6 +221,7 @@
         <a
           style="text-decoration: none; margin-bottom: 10px"
           href="https://hovermode.co.ke/"
+          target="_blank"
           >LInk: https://hovermode.co.ke/</a
         >
 
@@ -212,6 +245,7 @@
 
         <a
           style="text-decoration: none; margin-bottom: 10px"
+          target="_blank"
           href="https://yurei.co.ke/"
           >Link: https://yurei.co.ke/</a
         >
