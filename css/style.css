@@ -1,0 +1,172 @@
+body {
+  height: fit-content;
+}
+
+.background {
+  display: grid;
+  grid-template-columns: 25vw auto;
+  background-color: white;
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.left-side,
+.background,
+.right-side {
+  height: fit-content;
+}
+
+.left-side {
+  display: inline-flex;
+  background-color: #080da3;
+  width: 25vw;
+  color: white;
+  position: relative;
+  height: 100%;
+}
+
+.left-side img {
+  display: block;
+  width: 90%;
+  height: 200px;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.left-side div {
+  display: block;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.right-side {
+  display: inline-block;
+  color: black;
+  margin-right: 2.5vw;
+  margin-left: 2.5vw;
+}
+
+hr {
+  height: 2px;
+  background-color: black;
+}
+
+.right-side p {
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+@media (max-width: 768px) {
+  .background {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+
+  .left-side {
+    width: 100%;
+    display: block;
+    position: relative;
+    border-radius: 2.5cap;
+  }
+
+  .left-side img {
+    width: 150px;
+    height: 150px;
+    margin: 20px auto;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .left-side div {
+    margin-top: 20px;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  ol,
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+
+  .right-side {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .right-side h1 {
+    font-size: 36px !important;
+    text-align: center;
+  }
+
+  .right-side p {
+    font-size: 18px !important;
+  }
+
+  /* Profile section adjustments */
+  .right-side h3 {
+    margin-top: 40px !important;
+    text-align: center;
+  }
+
+  .right-side p:first-of-type {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .right-side h1 {
+    font-size: 28px !important;
+  }
+
+  .right-side p {
+    font-size: 16px !important;
+  }
+
+  .left-side img {
+    width: 120px;
+    height: 120px;
+  }
+
+  ol,
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+
+  .right-side {
+    width: 95%;
+    padding: 10px;
+  }
+}
+
+.left-side img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+
+  .left-side,
+  .right-side {
+    font-size: 14px;
+  }
+
+  .right-side .full-stack-developer {
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  h3 {
+    font-size: 16px;
+  }
+}
